@@ -1,0 +1,137 @@
+
+
+p {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+body{
+    border: 5px solid rgb(4, 9, 26);
+    background-image: linear-gradient(to right, blue, red);
+}
+
+em strong{
+    color: rgb(4, 6, 10);
+  
+
+}
+
+.creepy {
+   margin: auto ;
+   display:inline-block;
+   width: 50%;
+   padding-top: 15px;
+}
+
+
+
+
+#musica1 {
+    border-radius: 40%;
+    max-width: 100%;
+    margin: right;
+    display:inline-block;
+    height: 350px;
+    padding-top: 15px;
+}
+
+#saveyoutears {
+
+    max-width: 100%;
+    margin: right;
+    display:inline-block;
+    height: 350px;
+    padding-top: 15px;
+
+}
+.comeco {
+
+    background-image: linear-gradient(to right, blue, red);
+    padding: 20px;
+    border: 3px solid rgb(14, 26, 65)
+    
+}
+
+.comeco2 {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 10%;
+   
+   
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(14, 26, 65);
+    border: 3px solid rgb(14, 26, 65) ;
+    font-size:40px;
+   
+}
+
+.criaturas {
+    background-image: linear-gradient(to right, rgb(172, 125, 199), rgb(82, 24, 105));
+    padding: 20px;
+    border: 3px solid rgb(12, 14, 19);
+
+}
+.criatura {
+    background-image: linear-gradient(to right, blue, rgb(0, 255, 149), red);
+    padding: 20px; ;
+    display: inline-block;
+    text-align: center;
+}
+
+#titulo {
+        text-align: center;
+        color: rgb(14, 26, 65);
+        border:3px solid rgb(14, 26, 65);;
+        font-size: 50px;
+        padding-bottom: 10px;
+
+
+}
+
+
+ul {
+
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 10%;
+}
+
+
+
+.seres {
+    font-style: italic;
+    font-size: 18px;
+
+}
+
+
+#meio {
+    font-size: 18px;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(14, 26, 65);
+    border:3px solid rgb(52, 66, 114);;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+header {
+    background-image: linear-gradient(to right, blue, red);
+    font-size: 70px;
+    border: 3px solid rgb(14, 26, 65) ;
+    color: rgb(14, 26, 65);
+    text-align: center;
+}
