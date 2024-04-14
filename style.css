@@ -1,22 +1,98 @@
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .sedan-regular-italic {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
 
+body{
+    border: 5px solid rgb(4, 9, 26);
+    background: radial-gradient(ellipse at top, #DFA0C8, transparent 50%),
+    radial-gradient(ellipse at BOTTOM, #DFA0C8, transparent 50%),
+              radial-gradient(ellipse at bottom, #33C7F7, transparent),
+              radial-gradient(ellipse at left , #2C439B, transparent),
+              radial-gradient(circle at 10%, #25255F, transparent);
+              font-family: "Sedan", serif;;
+
+  
+}
+
+header {
+    border: 3px solid rgb(10, 0, 44) ;
+    text-align: center;
+    display: flex;
+}
+
+#logo {
+    display: flex;
+    padding-left: 20px;
+    height: 125px;
+}
+
+h1 {
+    display: flex;
+    padding-left: 250px;
+    padding-top: 25px;
+
+    font-size: 70px;
+    color: rgb(14, 26, 65);
+}
+
+.comeco {   
+    padding-top: 30px;
+    border: 3px solid rgb(0, 12, 53)    
+}
+.comeco2 {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    margin-right: 10%;
+}
 
 p {
     text-align: center;
     font-size: 20px;
+}
+
+.efeitos{
+    padding-left: 40px;
+    padding-top: 40px;
+    display: block;
+   font-size: 20px;
+    margin-right: 10%;
+}
+
+strong {
+font-style: italic;
 
 }
 
-body{
-    border: 5px solid rgb(4, 9, 26);
-    background-image: linear-gradient(to right, blue, red);
-}
-
-em strong{
-    color: rgb(4, 6, 10);
-  
+.generoeestilo {
+    padding-top: 30px;
+    border: 3px solid rgb(0, 12, 53)
 
 }
 
+.generoeestilo2{
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+    width: 40%;
+    border: 3px solid #25255F;
+    margin: 0 auto;
+
+}
 .creepy {
    margin: auto ;
    display:inline-block;
@@ -25,62 +101,40 @@ em strong{
 }
 
 
-
-
-#musica1 {
-    border-radius: 40%;
-    max-width: 100%;
-    margin: right;
-    display:inline-block;
-    height: 350px;
-    padding-top: 15px;
+#musica {
+    border-radius: 30%;
+    width: 30%;
+    margin-left: 10px;
+    display: inline-block;
+      height: 400px;
+    padding-top: 75px;
+    padding-bottom: 45px;
 }
 
 #saveyoutears {
-
     max-width: 100%;
     margin: right;
     display:inline-block;
     height: 350px;
     padding-top: 15px;
-
-}
-.comeco {
-
-    background-image: linear-gradient(to right, blue, red);
-    padding: 20px;
-    border: 3px solid rgb(14, 26, 65)
-    
 }
 
-.comeco2 {
-    padding: 20px;
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    margin-right: 10%;
-   
-   
-
-}
-
-h1 {
+h2 {
     text-align: center;
     color: rgb(14, 26, 65);
-    border: 3px solid rgb(14, 26, 65) ;
-    font-size:40px;
-   
+    border: 3px solid rgb(10, 0, 44) ;
+    font-size:40px; 
 }
 
 .criaturas {
-    background-image: linear-gradient(to right, rgb(172, 125, 199), rgb(82, 24, 105));
+  
     padding: 20px;
-    border: 3px solid rgb(12, 14, 19);
-
+    border: 3px solid rgb(10, 0, 44);
 }
+
 .criatura {
-    background-image: linear-gradient(to right, blue, rgb(0, 255, 149), red);
-    padding: 20px; ;
+   
+        padding: 20px; ;
     display: inline-block;
     text-align: center;
 }
@@ -88,50 +142,48 @@ h1 {
 #titulo {
         text-align: center;
         color: rgb(14, 26, 65);
-        border:3px solid rgb(14, 26, 65);;
+        border:3px solid rgb(10, 0, 44);;
         font-size: 50px;
         padding-bottom: 10px;
-
-
 }
 
-
 ul {
-
     display: inline-block;
     vertical-align: top;
     width: 30%;
     margin-right: 10%;
 }
 
-
-
 .seres {
     font-style: italic;
     font-size: 18px;
-
 }
-
 
 #meio {
     font-size: 18px;
 }
 
-h2 {
+h4 {
     text-align: center;
     color: rgb(14, 26, 65);
-    border:3px solid rgb(52, 66, 114);;
+    border:3px solid rgb(10, 0, 44);;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+li {
+
+    padding-left: 40px;
+    padding-top: 40px;
+    display: block;
+   font-size: 20px;
+    margin-right: 10%;
+}
+h3{
+    text-align: center;
+    color: rgb(14, 26, 65);
     font-size: 25px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
-
-
-header {
-    background-image: linear-gradient(to right, blue, red);
-    font-size: 70px;
-    border: 3px solid rgb(14, 26, 65) ;
-    color: rgb(14, 26, 65);
-    text-align: center;
-}
