@@ -11,15 +11,77 @@
   }
 
 body{
+    margin:0;
     border: 5px solid rgb(4, 9, 26);
     background: radial-gradient(ellipse at top, #DFA0C8, transparent 50%),
     radial-gradient(ellipse at BOTTOM, #DFA0C8, transparent 50%),
               radial-gradient(ellipse at bottom, #33C7F7, transparent),
               radial-gradient(ellipse at left , #2C439B, transparent),
               radial-gradient(circle at 10%, #25255F, transparent);
-              font-family: "Sedan", serif;;
+              font-family: "Sedan", serif;
 
   
+}
+
+.search-box {
+    position: absolute;
+    top: 3%;
+    left:80%;
+    padding-left: 30px;
+   padding-right: 30px;
+
+    background: radial-gradient(ellipse at top, #DFA0C8, transparent 20%),
+    radial-gradient(ellipse at BOTTOM, #DFA0C8, transparent 30%),
+              radial-gradient(ellipse at bottom, #33C7F7, transparent),
+              radial-gradient(ellipse at left , #DFA0C8, transparent 30%),
+              radial-gradient(circle at 10%, #DFA0C8, transparent 70%);
+ height: 100px ;
+ border-radius: 50px;
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.search-text{
+    padding: 0;
+    background: none;
+    border: 0;
+    outline: 0;
+    width: 0;
+    transition: 1s;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-box:hover > .search-text {
+    width: 70px;
+    padding-left: 30px;
+}
+
+.search-box:hover > .search-btn .loupe-blue {
+    display:none;
+    height: 17px;
+    transition: 1s;
+}
+.search-box:hover > .search-btn .loupe-white {
+    display: block;
+}
+
+:: ::-webkit-input-placeholder  { 
+    font-size: 17px;
+    color:bisque
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.loupe-white{
+display: none;
 }
 
 header {
