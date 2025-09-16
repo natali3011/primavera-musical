@@ -1,50 +1,58 @@
-.sedan-regular {
+/* --- Melhorias na Tipografia e no Corpo da Página --- */
+body {
+    margin: 0;
+    border: 5px solid rgb(4, 9, 26);
+    background: radial-gradient(ellipse at top, #DFA0C8, transparent 50%),
+                radial-gradient(ellipse at bottom, #DFA0C8, transparent 50%),
+                radial-gradient(ellipse at bottom, #33C7F7, transparent),
+                radial-gradient(ellipse at left, #2C439B, transparent),
+                radial-gradient(circle at 10%, #25255F, transparent);
     font-family: "Sedan", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .sedan-regular-italic {
-    font-family: "Sedan", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
+}
 
-body{
-    margin:0;
-    border: 5px solid rgb(145, 191, 211);
-    background:#ffffff
-              font-family: "Sedan", serif;
+/* --- Layout do Cabeçalho e da Busca (usando Flexbox) --- */
+header {
+    border: 3px solid rgb(10, 0, 44);
+    display: flex; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px;
+    position: relative;
+}
 
-  
+#logo {
+    height: 100px;
+}
+
+h1 {
+    font-size: 70px;
+    color: rgb(14, 26, 65);
+    margin: 0 auto 0 250px; /* Mantém o h1 centralizado, mas com margem à esquerda */
 }
 
 .search-box {
     position: absolute;
-    top: 3%;
-    left:80%;
-    padding-left: 30px;
-   padding-right: 30px;
-
+    right: 20px;
+    padding: 0 30px;
     background: radial-gradient(ellipse at top, #DFA0C8, transparent 20%),
-    radial-gradient(ellipse at BOTTOM, #DFA0C8, transparent 30%),
-              radial-gradient(ellipse at bottom, #33C7F7, transparent),
-              radial-gradient(ellipse at left , #DFA0C8, transparent 30%),
-              radial-gradient(circle at 10%, #DFA0C8, transparent 70%);
- height: 100px ;
- border-radius: 50px;
- display:flex;
- justify-content: space-between;
- align-items: center;
+                radial-gradient(ellipse at bottom, #DFA0C8, transparent 30%),
+                radial-gradient(ellipse at bottom, #33C7F7, transparent),
+                radial-gradient(ellipse at left, #DFA0C8, transparent 30%),
+                radial-gradient(circle at 10%, #DFA0C8, transparent 70%);
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.search-text{
+.search-text {
     padding: 0;
     background: none;
     border: 0;
     outline: 0;
     width: 0;
-    transition: 1s;
+    transition: width 1s;
 }
 
 .search-btn {
@@ -63,142 +71,81 @@ body{
 }
 
 .search-box:hover > .search-btn .loupe-blue {
-    display:none;
+    display: none;
     height: 17px;
     transition: 1s;
 }
+
 .search-box:hover > .search-btn .loupe-white {
     display: block;
 }
 
-
-.loupe-white{
-display: none;
-}
-
-header {
-    border: 3px solid rgb(10, 0, 44) ;
-    text-align: center;
-    display: flex;
-}
-
-#logo {
-    display: flex;
-    padding-left: 20px;
-    height: 125px;
-}
-
-h1 {
-    display: flex;
-    padding-left: 250px;
-    padding-top: 25px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    color: rgb(0, 162, 255);
-}
-
-.comeco {   
+/* --- Seções Principais (usando Flexbox) --- */
+.comeco {
     padding-top: 30px;
-    border: 3px solid rgb(0, 12, 53)    
+    border: 3px solid rgb(0, 12, 53);
+    display: flex; /* Usa Flexbox para o layout interno */
+    align-items: center; /* Alinha os itens verticalmente */
+    padding: 30px;
 }
+
 .comeco2 {
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-bottom: 30px;
-    display: inline-block;
-    vertical-align: top;
-    width: 40%;
-    margin-right: 10%;
+    width: 60%;
+    padding-right: 20px;
 }
-
-p {
-    text-align: center;
-    font-size: 20px;
-}
-
-.efeitos{
-    padding-left: 40px;
-    padding-top: 40px;
-    display: block;
-   font-size: 20px;
-    margin-right: 10%;
-}
-
-strong {
-font-style: italic;
-
-}
-
-.generoeestilo {
-    padding-top: 30px;
-    border: 3px solid rgb(0, 12, 53)
-
-}
-
-.generoeestilo2{
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 30px;
-    display: block;
-    text-align: center;
-    width: 40%;
-    border: 3px solid #25255F;
-    margin: 0 auto;
-
-}
-.creepy {
-   margin: auto ;
-   display:inline-block;
-   width: 50%;
-   padding-top: 15px;
-}
-
 
 #musica {
     border-radius: 30%;
-    width: 30%;
-    margin-left: 10px;
-    display: inline-block;
-      height: 400px;
-    padding-top: 75px;
-    padding-bottom: 45px;
+    width: 40%;
+    height: auto; /* Mantém a proporção da imagem */
 }
 
-#saveyoutears {
-    max-width: 100%;
-    margin: right;
-    display:inline-block;
-    height: 350px;
-    padding-top: 15px;
+.generoeestilo {
+    padding: 30px;
+    border: 3px solid rgb(0, 12, 53);
 }
 
-h2 {
-    text-align: center;
-    color: rgb(14, 26, 65);
-    border: 3px solid rgb(10, 0, 44) ;
-    font-size:40px; 
+.generoeestilo2 {
+    width: 40%;
+    border: 3px solid #25255F;
+    margin: 0 auto;
+    padding: 30px;
 }
 
 .criaturas {
-  
     padding: 20px;
     border: 3px solid rgb(10, 0, 44);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .criatura {
-   
-        padding: 20px; ;
-    display: inline-block;
+    padding: 20px;
     text-align: center;
+    width: 50%;
 }
 
-#titulo {
-        text-align: center;
-        color: rgb(14, 26, 65);
-        border:3px solid rgb(10, 0, 44);;
-        font-size: 50px;
-        padding-bottom: 10px;
+.creepy {
+    width: 35%;
+    height: auto;
+}
+
+/* --- Estilos de Elementos --- */
+h2, h4, h3, #titulo {
+    text-align: center;
+    color: rgb(14, 26, 65);
+    border: 3px solid rgb(10, 0, 44);
+    padding: 10px;
+}
+
+h2 { font-size: 40px; }
+h4 { font-size: 25px; }
+#titulo { font-size: 50px; }
+
+p {
+    font-size: 20px;
+    text-align: left; /* Alinhamento padrão dos parágrafos */
 }
 
 ul {
@@ -206,37 +153,21 @@ ul {
     vertical-align: top;
     width: 30%;
     margin-right: 10%;
+    list-style-type: disc;
 }
 
-.seres {
-    font-style: italic;
-    font-size: 18px;
+.seres, .efeitos, .genero {
+    font-size: 20px;
+    padding-left: 0;
+    margin-bottom: 10px;
 }
 
-#meio {
-    font-size: 18px;
+
+.seres a, .efeitos a {
+    text-decoration: none;
+    color: inherit;
 }
 
-h4 {
-    text-align: center;
-    color: rgb(14, 26, 65);
-    border:3px solid rgb(10, 0, 44);;
-    font-size: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-li {
-
-    padding-left: 40px;
-    padding-top: 40px;
-    display: block;
-   font-size: 20px;
-    margin-right: 10%;
-}
-h3{
-    text-align: center;
-    color: rgb(14, 26, 65);
-    font-size: 25px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+.loupe-white {
+    display: none;
 }
